@@ -27,8 +27,7 @@ build:
     image_name: drydock/u14nod
     image_tag: prod
     pull: true
-    envs: 'FOO=true BOO=false'
-    options: '--privileged=true --net=bridge'
+    options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
 
   ci:
     - ps -eax
