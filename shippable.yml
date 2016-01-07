@@ -56,7 +56,7 @@ integrations:
           - test
 
   hub:
-    - integrationName: dock-avi
+    - integrationName: "Ragesh - Docker"
       type: docker
       branches:
         only:
