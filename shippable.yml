@@ -16,17 +16,13 @@ env:
     - M2=TWO
 
 build:
-  pre_build:
-    - ls
-    - ls -al
-
-  post_build:
-    - sudo ls /
+  pre_ci:
+    - docker build --rm -t=ragesh/sample_node .
 
   pre_ci_boot:
-    image_name: drydock/u14nod
-    image_tag: prod
-    pull: true
+    image_name: ragesh/sample_node
+    image_tag: latest
+    pull: false
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
 
   ci:
