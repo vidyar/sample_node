@@ -28,6 +28,9 @@ build:
   ci:
     - ps -eax
     - ls -al
+    
+  post_ci:
+    - docker push ragesh/sample_node
 
   smoke_test:
     - sudo ls /
