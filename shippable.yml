@@ -42,7 +42,7 @@ deploy:
 
 integrations:
   notification:
-    - integrationName: "chandrakanth-slk"
+    - integrationName: "chandrakanth-slack"
       type: slack
       recepients:
         - slacktestck
