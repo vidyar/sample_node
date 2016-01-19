@@ -44,7 +44,7 @@ integrations:
   notification:
     - integrationName: "chandrakanth-slack"
       type: slack
-      recepients:
+      recipients:
         - slacktestck
       branches:
         only:
