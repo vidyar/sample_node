@@ -30,7 +30,7 @@ build:
     - ls -al
 
   post_ci:
-    - docker push ragesh/sample_node
+    - docker push kanthchandra/sample_node
 
   smoke_test:
     - sudo ls /
@@ -42,24 +42,20 @@ deploy:
 
 integrations:
   notification:
-    - integrationName: slk-avi
+    - integrationName: "chandrakanth-slk"
       type: slack
       recepients:
-        - prod
+        - slacktestck
       branches:
         only:
           - master
-
-    - integrationName: slk-avi
-      type: slack
-      recepients:
-        - beta
-      branches:
-        only:
-          - test
+      on_start: always
+      on_success: always
+      on_failure: always
+      on_pull_request: always
 
   hub:
-    - integrationName: "Ragesh - Docker"
+    - integrationName: "kanthchandra-docker"
       type: docker
       branches:
         only:
