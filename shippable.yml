@@ -42,10 +42,10 @@ deploy:
 
 integrations:
   notification:
-    - integrationName: "ck-slack"
+    - integrationName: "slack-pvt"
       type: slack
       recipients:
-        - general
+        - pvt-channel
       branches:
         only:
           - master
