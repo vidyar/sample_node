@@ -45,7 +45,7 @@ integrations:
     - integrationName: "ck-slack"
       type: slack
       recipients:
-        - slacktestck
+        - general
       branches:
         only:
           - master
