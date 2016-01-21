@@ -17,10 +17,10 @@ env:
 
 build:
   pre_ci:
-    - docker build --rm -t=vidyar/sample_node .
+    - docker build --rm -t=quay.io/vidyar/beta-sample-node .
 
   pre_ci_boot:
-    image_name: vidyar/sample_node
+    image_name: quay.io/vidyar/beta-sample-node
     image_tag: latest
     pull: false
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
@@ -30,7 +30,7 @@ build:
     - ls -al
 
   post_ci:
-    - docker push vidyar/sample_node
+    - docker push quay.io/vidyar/beta-sample-node
 
   smoke_test:
     - sudo ls /
@@ -56,8 +56,8 @@ integrations:
     
 
   hub:
-    - integrationName: "docker-vr"
-      type: docker
+    - integrationName: "quay-vr"
+      type: Quay.io
       branches:
         only:
           - master
