@@ -13,8 +13,8 @@ env:
 
  
 build:
-  pre_ci:
-    - docker build --rm -t=quay.io/vidyar/beta-sample-img-app .
+ # pre_ci:
+  #  - docker build --rm -t=quay.io/vidyar/beta-sample-img-app .
 
   pre_ci_boot:
     image_name: quay.io/vidyar/beta-sample-img-app
