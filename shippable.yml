@@ -27,7 +27,7 @@ build:
     - ls -al
 
  # post_ci:
-    - #docker push quay.io/vidyar/beta-sample-img-app
+    #- docker push quay.io/vidyar/beta-sample-img-app
 
   smoke_test:
     - sudo ls /
