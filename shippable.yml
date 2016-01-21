@@ -17,7 +17,7 @@ env:
 
 build:
   pre_ci:
-    - docker build --rm -t=/vidyar/beta-sample-img-app .
+    - docker build --rm -t=vidyar/beta-sample-img-app .
 
   pre_ci_boot:
     image_name: vidyar/beta-sample-img-app
