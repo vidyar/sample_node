@@ -17,8 +17,8 @@ build:
   #  - docker build --rm -t=quay.io/vidyar/beta-sample-img-app .
 
   pre_ci_boot:
-    image_name: quay.io/vidyar/postci-img
-    image_tag: master.13
+    image_name: vidyar/phpmongo
+    image_tag: master.69.1
     pull: true
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
 
@@ -53,8 +53,8 @@ integrations:
     
 
   hub:
-    - integrationName: "quay-vr"
-      type: quay
+    - integrationName: "docker-vr"
+      type: docker
       branches:
         only:
           - master
