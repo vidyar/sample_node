@@ -17,8 +17,8 @@ build:
   #  - docker build --rm -t=quay.io/vidyar/beta-sample-img-app .
 
   pre_ci_boot:
-    image_name: vidyar/phpmongo
-    image_tag: master.69.1
+    image_name: vidyar/dockerbuild-app
+    image_tag: latest
     pull: true
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
 
