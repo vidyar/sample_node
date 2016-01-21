@@ -42,10 +42,10 @@ deploy:
 
 integrations:
   notification:
-    - integrationName: "vidya-slack"
+    - integrationName: "slack-pvt"
       type: slack
       recipients:
-        - newbuildsystem
+        - pvt-channel
       branches:
         only:
           - master
