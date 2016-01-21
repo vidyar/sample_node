@@ -57,7 +57,7 @@ integrations:
 
   hub:
     - integrationName: "docker-vr"
-      type: Docker
+      type: docker
       branches:
         only:
           - master
