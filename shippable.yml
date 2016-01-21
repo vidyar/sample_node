@@ -11,10 +11,7 @@ env:
     - FO1=BUBU
     - BOO=GUBU
 
-  matrix:
-    - M1=ONE
-    - M2=TWO
-
+ 
 build:
   pre_ci:
     - docker build --rm -t=quay.io/vidyar/beta-sample-img-app .
