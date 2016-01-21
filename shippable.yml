@@ -19,14 +19,14 @@ build:
   pre_ci_boot:
     image_name: quay.io/vidyar/postci-img
     image_tag: master.13
-    pull: false
+    pull: true
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
 
   ci:
     - ps -eax
     - ls -al
 
-  post_ci:
+ # post_ci:
     - #docker push quay.io/vidyar/beta-sample-img-app
 
   smoke_test:
