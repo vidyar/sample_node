@@ -42,7 +42,7 @@ integrations:
     - integrationName: "slack-pvt"
       type: slack
       recipients:
-        - pvt-channel
+        - pvt-channel222
       branches:
         only:
           - master
