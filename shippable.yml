@@ -6,8 +6,8 @@ node_js:
   - 0.12
 
 services:
-  - rethinkdb
-  #- couchdb
+  #- rethinkdb
+   - couchdb
   #- rethinkdb
   #- elasticsearch
  # - memcached
