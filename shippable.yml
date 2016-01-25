@@ -8,9 +8,9 @@ node_js:
 services:
   #- couchdb
   #- rethinkdb
-  #- elasticsearch
+  - elasticsearch
  # - memcached
-  - neo4j
+ # - neo4j
   #- mongodb
   
 
