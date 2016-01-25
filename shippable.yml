@@ -6,13 +6,8 @@ node_js:
   - 0.12
 
 services:
-  #- rethinkdb
-   - couchdb
-  #- rethinkdb
-  #- elasticsearch
- # - memcached
- # - neo4j
-  #- mongodb
+  - selenium
+  
   
 
 env:
