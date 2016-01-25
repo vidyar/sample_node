@@ -8,6 +8,11 @@ node_js:
 services:
   - couchdb
   - rethinkdb
+  - elasticsearch
+  - memcached
+  - neo4j
+  - mongodb
+  
 
 env:
   global:
