@@ -9,9 +9,9 @@ services:
   #- couchdb
   #- rethinkdb
   #- elasticsearch
-  - memcached
-  #- neo4j
-  - mongodb
+ # - memcached
+  - neo4j
+  #- mongodb
   
 
 env:
