@@ -4,7 +4,7 @@ language: node_js
 # Version number
 node_js:
   - 0.12
-  - 0.11
+#  - 0.11
 
 env:
   global:
@@ -12,9 +12,9 @@ env:
     - FO1=BUBU
     - BOO=GUBU
 
-#  matrix:
- #   - M1=ONE
-  #  - M2=TWO
+  matrix:
+    - M1=ONE
+    - M2=TWO
 
 build:
 #  pre_ci:
@@ -29,6 +29,8 @@ build:
   ci:
     - ps -eax
     - ls -al
+    - echo $M1
+    - echo $M2
 
  # post_ci:
   #  - docker push vidyar/beta-sample-node
