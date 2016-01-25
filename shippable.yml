@@ -6,11 +6,11 @@ node_js:
   - 0.12
 
 services:
-  - couchdb
-  - rethinkdb
-  - elasticsearch
-  - memcached
-  - neo4j
+  #- couchdb
+  #- rethinkdb
+  #- elasticsearch
+  #- memcached
+  #- neo4j
   - mongodb
   
 
