@@ -9,7 +9,7 @@ services:
   #- couchdb
   #- rethinkdb
   #- elasticsearch
-  #- memcached
+  - memcached
   #- neo4j
   - mongodb
   
