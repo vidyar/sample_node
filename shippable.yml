@@ -12,26 +12,26 @@ env:
     - FO1=BUBU
     - BOO=GUBU
 
-  matrix:
-    - M1=ONE
-    - M2=TWO
+#  matrix:
+ #   - M1=ONE
+  #  - M2=TWO
 
 build:
-  pre_ci:
-    - docker build --rm -t= vidyar/beta-sample-node .
+#  pre_ci:
+ #   - docker build --rm -t= vidyar/beta-sample-node .
 
   pre_ci_boot:
-    image_name: vidyar/beta-sample-img-app
-    image_tag: latest
-    pull: false
+    image_name: drydock/u12nodpls
+    image_tag: prod
+    pull: true
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
 
   ci:
     - ps -eax
     - ls -al
 
-  post_ci:
-    - docker push vidyar/beta-sample-node
+ # post_ci:
+  #  - docker push vidyar/beta-sample-node
 
   smoke_test:
     - sudo ls /
