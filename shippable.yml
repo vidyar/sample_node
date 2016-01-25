@@ -5,6 +5,9 @@ language: node_js
 node_js:
   - 0.12
 
+services:
+  - mysql
+
 env:
   global:
     - FOO=FUBU
@@ -17,7 +20,7 @@ build:
   #  - docker build --rm -t=quay.io/vidyar/beta-sample-img-app .
 
   pre_ci_boot:
-    image_name: quay.io/vidyar/beta-sample-img-app
+    image_name: drydock/u14nodpls
     image_tag: latest
     pull: true
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
@@ -25,6 +28,7 @@ build:
   ci:
     - ps -eax
     - ls -al
+    - echo $FOO
 
 #  post_ci:
  #   - docker push quay.io/vidyar/beta-sample-img-app
