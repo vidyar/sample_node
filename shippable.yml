@@ -6,10 +6,8 @@ node_js:
   - 0.12
 
 services:
-  - cassandra
-  
-  
-
+  - elasticsearch
+ 
 env:
   global:
     - FOO=FUBU
