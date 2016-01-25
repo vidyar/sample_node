@@ -42,7 +42,7 @@ integrations:
     - integrationName: "vidya-slack"
       type: slack
       recipients:
-        - newbuildsystem
+        - "#newbuildsystem"
       branches:
         only:
           - master
