@@ -36,6 +36,7 @@ build:
     - ps -eax
     - ls -al
     - echo $FOO
+    - npm install
     - grunt
 
   #post_ci:
