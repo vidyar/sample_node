@@ -5,8 +5,8 @@ language: node_js
 node_js:
   - 0.12
 
-services:
-  - elasticsearch
+#services:
+ # - elasticsearch
   #- couchdb
   #- rethinkdb
   #- elasticsearch
@@ -36,6 +36,7 @@ build:
     - ps -eax
     - ls -al
     - echo $FOO
+    - grunt
 
   #post_ci:
    # - docker push quay.io/vidyar/beta-sample-img-app
