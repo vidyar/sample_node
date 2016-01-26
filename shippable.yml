@@ -31,8 +31,10 @@ build:
     - ls -al
     - echo $FOO
 
-  #post_ci:
-   # - docker push quay.io/vidyar/beta-sample-img-app
+  post_ci:
+    - docker push quay.io/vidyar/beta-sample-img-app:test1
+    - docker push quay.io/vidyar/beta-sample-img-app:test1
+    
 
   smoke_test:
     - sudo ls /
