@@ -3,13 +3,12 @@ language: node_js
 
 # Version number
 node_js:
-  - 0.12
+  - "0.12"
 
 services:
   - selenium
   
   
-
 env:
   global:
     - FOO=FUBU
