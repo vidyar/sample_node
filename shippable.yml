@@ -6,7 +6,8 @@ node_js:
   - "0.12"
   #- "0.11"
  # -# "5.0"
-
+git:
+ submodules: false
 #services:
  # - elasticsearch
   #- couchdb
