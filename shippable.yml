@@ -32,7 +32,7 @@ build:
   pre_ci_boot:
     image_name: quay.io/vidyar/beta-sample-img-app 
     image_tag: latest
-    pull: true
+    pull: false
     options: '--privileged=false --net=bridge -e FOO=true -e BOO=false'
 
   ci:
