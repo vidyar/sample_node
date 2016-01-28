@@ -23,8 +23,8 @@ env:
 
  
 build:
- # pre_ci:
-  #  - docker build --rm -t=quay.io/vidyar/beta-sample-img-app .
+  pre_ci:
+    - docker build --rm -t=quay.io/vidyar/postci-img .
 
   pre_ci_boot:
     image_name: quay.io/vidyar/postci-img
@@ -37,8 +37,8 @@ build:
     - ls -al
     - echo $FOO
 
-  #post_ci:
-   # - docker push quay.io/vidyar/beta-sample-img-app1
+  post_ci:
+    - docker push quay.io/vidyar/postci-img
 
   smoke_test:
     - sudo ls /
@@ -78,7 +78,4 @@ integrations:
   hub:
     - integrationName: "quay-vr"
       type: quay
-      branches:
-        only:
-          - master
- 
+      
