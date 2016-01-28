@@ -28,8 +28,8 @@ build:
 
   pre_ci_boot:
     image_name: quay.io/vidyar/postci-img
-    image_tag: master.13
-    pull: true
+    image_tag: latest
+    pull: false
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
 
   ci:
