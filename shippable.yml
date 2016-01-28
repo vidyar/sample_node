@@ -74,9 +74,9 @@ integrations:
       branches:
         only:
           - master
-      on_start: never
+      on_start: always
       on_success: always
-      on_failure: change
+      on_failure: always
       on_pull_request: always
     
 
