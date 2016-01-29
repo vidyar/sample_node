@@ -3,14 +3,14 @@ language: node_js
 
 # Version number
 node_js:
-  - 0.12
+  - "0.12"
 
 env:
   global:
     - FOO=FUBU
 
   matrix:
-    - M1=ONE
+    - M1=one
 
 build:
   pre_ci:
