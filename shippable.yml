@@ -83,7 +83,7 @@ integrations:
 
   hub:
     - integrationName: "quay-vr"
-      type: quay
+      type: "quay.io"
       branches:
         only:
           - master
