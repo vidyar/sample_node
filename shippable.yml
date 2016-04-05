@@ -2,7 +2,6 @@
 language: node_js
 
 
-
 # Version number
 node_js:
   - "0.12"
@@ -39,4 +38,4 @@ integrations:
       type: docker
       branches:
         only:
-          - "master"
+          - master
