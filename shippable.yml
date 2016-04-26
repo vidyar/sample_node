@@ -30,7 +30,7 @@ build:
   ci:
     - ps -eax
     - ls -al
-    - sleep 5m
+    - sleep 6m
 
   post_ci:
     - docker push shippabledocker/sample-node-test
