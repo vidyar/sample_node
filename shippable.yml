@@ -15,8 +15,6 @@ env:
     - M2=two
     - M3=three
 
-services:
-  - postgres
 
 build:
   pre_ci:
