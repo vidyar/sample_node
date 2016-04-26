@@ -4,7 +4,7 @@ language: node_js
 # Version number
 node_js:
   - "0.12"
-  - "0.11"
+  
 
 env:
   global:
@@ -12,6 +12,8 @@ env:
 
   matrix:
     - M1=one
+    - M2=two
+    - M3=three
 
 services:
   - postgres
@@ -30,6 +32,7 @@ build:
   ci:
     - ps -eax
     - ls -al
+    - sleep 5m
 
   post_ci:
     - docker push shippabledocker/sample-node-test
@@ -38,6 +41,4 @@ integrations:
   hub:
     - integrationName: ship-docker
       type: docker
-      branches:
-        only:
-          - master
+      
